@@ -3,17 +3,11 @@
 
 ---
 
-## 🏢 Nome da empresa (Grupo) e logo
 - **Grupo/Empresa:** Agile Devs  
-- **Logo:** insira o arquivo em `docs/logo.png` (ou outro caminho) e use:
-
-```markdown
-![Logo do Grupo](docs/logo.png)
-```
-
+- **Logo:**
+  
 ---
 
-## 📚 Disciplina, ano e semestre
 - **Disciplina:** Desenvolvimento Ágil  
 - **Ano/Semestre:** 2025/2  
 - **Professora:** Erica  
@@ -36,16 +30,14 @@
 
 ## 🧭 Descrição do projeto
 **Objetivo:**  
-O projeto tem como objetivo simular um sistema interno utilizado por uma **empresa de desenvolvimento de software** para gerenciar diferentes **tipos de funcionários**, como **gerentes, programadores e analistas de dados**.
+O projeto tem como objetivo atuar como sistema interno utilizado por uma **empresa de desenvolvimento de software** para gerenciar diferentes **tipos de funcionários**, como **gerentes, programadores e analistas de dados**.
 
 **Principais funcionalidades:**  
 - Cadastro e exibição de funcionários de diferentes categorias.  
 - Manipulação de dados como **nome**, **salário** e **departamento**.  
-- Estrutura orientada a objetos com **herança, polimorfismo e encapsulamento**.  
-- Tratamento de exceções personalizadas para cenários específicos.  
 
 **Público-alvo:**  
-- Equipes acadêmicas e desenvolvedores iniciantes que buscam compreender conceitos de **programação orientada a objetos** aplicados em um sistema de gestão.  
+- Empresas de desenvolvimento tecnológico que buscam um sistema simples de gestao de seus funcionários.
 
 ---
 
