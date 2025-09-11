@@ -4,7 +4,8 @@
 ---
 
 - **Grupo/Empresa:** Agile Devs  
-- **Logo:** <img width="479" height="185" alt="image" src="https://github.com/user-attachments/assets/ced57404-9493-4d4b-b035-f795e389a523" />
+- **Logo:**
+ <img width="479" height="185" alt="image" src="https://github.com/user-attachments/assets/ced57404-9493-4d4b-b035-f795e389a523" />
   
 ---
 
