@@ -1,0 +1,44 @@
+# 1. História de Usuário
+
+A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas. 
+
+<table>
+    <thead>
+        <tr style="background-color: purple; color: white" >
+            <th style="border-style:solid;border-width:1px;text-align:center">ID</th>
+            <th style="border-style:solid;border-width:1px;text-align:center">História de Usuário</th>
+            <th style="border-style:solid;border-width:1px;text-align:center">Critérios de aceitação</th>
+            <th style="border-style:solid;border-width:1px;text-align:center">Prioridade</th>
+            <th style="border-style:solid;border-width:1px;text-align:center">RF/RNF relacionado</th>
+            <th style="border-style:solid;border-width:1px;text-align:center">Story Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <span id="ustory-01"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US01</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como administrador do sistema, quero cadastrar novos funcionários informando nome, categoria, salário e departamento, para que eu possa manter um registro organizado da equipe.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema deve permitir inserir nome, categoria, salário e departamento.</li><li>O sistema deve confirmar o cadastro com uma mensagem de sucesso.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF01</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+        <tr>
+            <span id="ustory-01"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US02</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como administrador do sistema, quero visualizar a lista de funcionários cadastrados com suas principais informações, para que eu consiga acompanhar e consultar rapidamente os dados da equipe.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema deve exibir todos os funcionários cadastrados em formato de lista.</li><li> Cada funcionário deve mostrar nome, categoria, salário e departamento.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> Média </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF02</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+        <tr>
+            <span id="ustory-01"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US03</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como administrador do sistema, quero editar as informações de um funcionário já cadastrado, para que os dados fiquem sempre corretos e atualizados.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema deve permitir selecionar um funcionário já cadastrado.</li><li>O sistema deve permitir editar dados como categoria, salário e departamento.</li><li>As alterações devem ser salvas e refletidas imediatamente na consulta de funcionários.</li></ol></td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF03</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+</table>
