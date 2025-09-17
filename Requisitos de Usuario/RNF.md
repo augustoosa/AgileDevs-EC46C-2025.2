@@ -7,4 +7,5 @@
 | RNF03 | O sistema deve realizar backups automáticos e semanais do banco de dados para prevenir a perda de informações dos funcionários. | Alta | RF01, RF02, RF03 |
 | RNF04 |	O sistema deve ser compatível com os sistemas operacionais macOS, Windows e Linux nas suas versões mais recentes. |	Média |	RF01, RF02, RF03
 | RNF05	| O sistema deve estar disponível 99,9% do tempo, exceto durante manutenções programadas. |	Alta	| Todos |
-| RNF06	| O sistema deve utilizar criptografia SSL/TLS para proteger a comunicação entre o navegador do usuário e o servidor.	 |Alta |	RF01 |
+| RNF06	| O sistema deve utilizar criptografia SSL/TLS para proteger a comunicação entre o sistema do usuário e o servidor. | Alta |	RF01 |
+
