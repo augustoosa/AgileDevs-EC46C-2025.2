@@ -41,4 +41,23 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF03</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
         </tr>
+        <tr>
+    <span id="ustory-04"></span>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US04</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero excluir um funcionário do sistema, para que eu possa manter a base de dados atualizada apenas com os colaboradores ativos.</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>O sistema deve permitir selecionar um funcionário para exclusão</li><li>O sistema deve solicitar confirmação antes de excluir o funcionário</li><li>O funcionário excluído não deve mais aparecer na lista de consulta</li></ol></td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF04</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+</tr>
+<tr>
+    <span id="ustory-05"></span>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US05</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero filtrar a lista de funcionários por departamento, para que eu consiga visualizar apenas os colaboradores de um setor específico.</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> <ol><li>O sistema deve disponibilizar um campo de filtro por departamento</li><li>A lista deve atualizar exibindo apenas os funcionários pertencentes ao departamento selecionado</li><li>Deve ser possível limpar o filtro para voltar à lista completa</li></ol></td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF05</td>
+    <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+</tr>
 </table>
+
