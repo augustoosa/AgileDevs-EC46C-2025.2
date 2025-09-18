@@ -68,6 +68,54 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF06</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
         </tr>
+        <tr>
+            <span id="ustory-07"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US07</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero que o sistema valide os dados ao inserir ou editar um funcionário para garantir a qualidade e consistência das informações.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">
+                <ol>
+                    <li>Nome não pode ser vazio e salário deve ser numérico &gt; 0.</li>
+                    <li>Categoria deve pertencer ao catálogo (gerente, programador, analista de dados, etc.).</li>
+                    <li>Departamento deve existir (validação de chave estrangeira).</li>
+                    <li>Em caso de erro, não salva e exibe mensagem específica por campo.</li>
+                </ol>
+            </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Validação de dados</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+        <tr>
+            <span id="ustory-08"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US08</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero gerar relatórios dinâmicos com total de funcionários e média salarial (geral e filtrada) para acompanhar indicadores do quadro de pessoal.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">
+                <ol>
+                    <li>Permite filtrar por departamento, categoria e período de admissão.</li>
+                    <li>Apresenta total de funcionários e média salarial (global e conforme filtros).</li>
+                    <li>Cálculos feitos diretamente no BD respeitando os filtros.</li>
+                    <li>Permite drill-down para listar funcionários que compõem cada indicador.</li>
+                </ol>
+            </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Relatórios dinâmicos</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+        <tr>
+            <span id="ustory-09"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US09</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero visualizar uma consolidação por departamento (quantidade, média, menor e maior salário) e exportar o resultado para apoiar decisões de alocação.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">
+                <ol>
+                    <li>Painel por departamento com quantidade, média, mínimo e máximo salarial.</li>
+                    <li>Filtros por categoria e status (ativo/inativo, se existir no modelo).</li>
+                    <li>Exportação da visão atual (com filtros aplicados) para CSV.</li>
+                    <li>Dados consultados no BD com tempo de resposta adequado (&lt;= 2s para até 10k registros agregados).</li>
+                </ol>
+            </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Relatórios dinâmicos / Exportação</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+    </tbody>
 </table>
-
-
+```
