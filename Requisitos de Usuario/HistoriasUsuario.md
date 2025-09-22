@@ -81,7 +81,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
                 </ol>
             </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Validação de dados</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF08</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
         </tr>
         <tr>
@@ -97,7 +97,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
                 </ol>
             </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Relatórios dinâmicos</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF09</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
         </tr>
         <tr>
@@ -113,9 +113,10 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
                 </ol>
             </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Relatórios dinâmicos / Exportação</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF09</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
         </tr>
     </tbody>
 </table>
 ```
+
