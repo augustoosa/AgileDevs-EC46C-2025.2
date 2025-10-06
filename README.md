@@ -31,7 +31,7 @@
 
 ## 🧭 Descrição do projeto
 **Objetivo:**  
-O projeto tem como objetivo atuar como sistema interno utilizado por uma **empresa de desenvolvimento de software** para gerenciar diferentes **tipos de funcionários**, como **gerentes, programadores e analistas de dados**.
+O projeto tem como objetivo atuar como sistema interno (CRUD) utilizado por uma **empresa de desenvolvimento de software** para gerenciar diferentes **tipos de funcionários**, como **gerentes, programadores e analistas de dados**.
 
 **Principais funcionalidades:**  
 - Cadastro e exibição de funcionários de diferentes categorias.  
