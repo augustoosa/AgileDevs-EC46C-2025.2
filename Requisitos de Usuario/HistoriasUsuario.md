@@ -21,7 +21,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema deve permitir inserir nome, categoria, salário e departamento.</li><li>O sistema deve confirmar o cadastro com uma mensagem de sucesso.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF01</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
         </tr>
         <tr>
             <span id="ustory-01"></span>
@@ -30,7 +30,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema deve exibir todos os funcionários cadastrados em formato de lista.</li><li> Cada funcionário deve mostrar nome, categoria, salário e departamento.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> Média </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF02</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
         </tr>
         <tr>
             <span id="ustory-01"></span>
@@ -39,7 +39,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1"><ol><li>O sistema deve permitir selecionar um funcionário já cadastrado.</li><li>O sistema deve permitir editar dados como categoria, salário e departamento.</li><li>As alterações devem ser salvas e refletidas imediatamente na consulta de funcionários.</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF03</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">5</td>
         </tr>
         <tr>
             <span id="ustory-04"></span>
@@ -48,7 +48,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>O sistema deve permitir selecionar um funcionário para exclusão</li><li>O sistema deve solicitar confirmação antes de excluir o funcionário</li><li>O funcionário excluído não deve mais aparecer na lista de consulta</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF04</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">2</td>
         </tr>
         <tr>
             <span id="ustory-05"></span>
@@ -57,7 +57,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> <ol><li>O sistema deve disponibilizar um campo de filtro por departamento</li><li>A lista deve atualizar exibindo apenas os funcionários pertencentes ao departamento selecionado</li><li>Deve ser possível limpar o filtro para voltar à lista completa</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF05</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">8</td>
         </tr>
         <tr>
             <span id="ustory-06"></span>
@@ -66,7 +66,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"><ol><li>O sistema deve somar os salários de todos os funcionários cadastrados</li><li>O sistema deve exibir o valor total da folha de pagamento em tela</li><li>O valor exibido deve atualizar automaticamente quando houver inclusão, edição ou exclusão de funcionários</li></ol></td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF06</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">13</td>
         </tr>
         <tr>
             <span id="ustory-07"></span>
@@ -82,7 +82,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF08</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">8</td>
         </tr>
         <tr>
             <span id="ustory-08"></span>
@@ -98,23 +98,22 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF09</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">21</td>
         </tr>
         <tr>
             <span id="ustory-09"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">US09</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero visualizar uma consolidação por departamento (quantidade, média, menor e maior salário) e exportar o resultado para apoiar decisões de alocação.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Como administrador do sistema, quero iniciar um novo projeto da empresa, onde posso inserir e gerenciar os funcionarios (ja cadastrados) e as caracteríticas desse projeto.</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">
                 <ol>
-                    <li>Painel por departamento com quantidade, média, mínimo e máximo salarial.</li>
-                    <li>Filtros por categoria e status (ativo/inativo, se existir no modelo).</li>
-                    <li>Exportação da visão atual (com filtros aplicados) para CSV.</li>
-                    <li>Dados consultados no BD com tempo de resposta adequado (&lt;= 2s para até 10k registros agregados).</li>
+                    <li>Painel de cadastro de projeto</li>
+                    <li>Painel de exibicao de projetos cadastrados</li>
+                    <li>sistema de busca de funcionarios para designacao ao projeto</li>
                 </ol>
             </td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Média</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">Alta</td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">RF09</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">21</td>
         </tr>
     </tbody>
 </table>
