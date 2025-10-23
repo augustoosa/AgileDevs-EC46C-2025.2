@@ -1,0 +1,3 @@
+**Integração Contínua (CI)** é a prática de enviar o código com frequência para um repositório compartilhado, onde testes e verificações automáticas são executados para detectar erros cedo e evitar que a aplicação quebre.  
+As **branches** são ramificações do código usadas para desenvolver novas funcionalidades ou corrigir problemas de forma isolada, sem afetar a branch principal. Quando tudo está certo, o código é unido (merge) ao fluxo principal.  
+O **Pull Request** é importante porque permite revisar o código antes do merge. Ele centraliza comentários, executa checagens da CI, ajuda a resolver conflitos e garante mais qualidade e segurança nas entregas.
