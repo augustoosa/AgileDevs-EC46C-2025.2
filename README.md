@@ -108,23 +108,18 @@ CREATE TABLE IF NOT EXISTS `projeto_equipe` (
     ON DELETE CASCADE
 );
 ```
-3. Configuração do Projeto
-Abra o projeto no NetBeans.
-
-Navegue até o arquivo connection/ConexaoMySQL.java.
-
-Altere as variáveis USER e PASSWORD para corresponder às suas credenciais do MySQL:
+3. Configuração do Projeto:
+   - Abra o projeto no NetBeans.
+   - Navegue até o arquivo connection/ConexaoMySQL.java.
+   - Altere as variáveis USER e PASSWORD para corresponder às suas credenciais do MySQL:
 ```
 // dentro de connection/ConexaoMySQL.java
 private static final String USER = "root";
 private static final String PASSWORD = "sua_senha_aqui"; // <-- MUDE AQUI
 ```
 
-4. Executando a Aplicação
-Clique com o botão direito no projeto e selecione "Limpar e Construir" (Clean and Build).
-
-Encontre o arquivo View/FormPrincipal.java.
-
-Clique com o botão direito nele e selecione "Executar Arquivo" (Run File).
-
-O formulário principal será aberto.
+4. Executando a Aplicação:
+   - Clique com o botão direito no projeto e selecione "Limpar e Construir" (Clean and Build).
+   - Encontre o arquivo View/FormPrincipal.java.
+   - Clique com o botão direito nele e selecione "Executar Arquivo" (Run File).
+   - O formulário principal será aberto.
