@@ -46,3 +46,85 @@ O projeto tem como objetivo atuar como sistema interno (CRUD) utilizado por uma 
 - Requisitos Funcionais
 - Requisitos Não Funcionais
 
+## 🚀 Como Executar:
+
+Siga estes passos para configurar e executar o projeto em seu ambiente local.
+
+### 1. Pré-requisitos
+
+* JDK 18 ou superior.
+* Uma IDE Java (o projeto foi desenvolvido no Apache NetBeans).
+* SGBD MySQL Workbench
+
+### 2. Configuração do Banco de Dados
+
+1.  Abra seu gerenciador de banco de dados 
+2.  Execute o script SQL abaixo para criar o banco `banco_POO2` e todas as tabelas:
+
+```sql
+CREATE DATABASE IF NOT EXISTS `banco_POO2` DEFAULT CHARACTER SET utf8mb4;
+USE `banco_POO2`;
+
+CREATE TABLE IF NOT EXISTS `funcionario` (
+  `cpf` INT NOT NULL,
+  `nome` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NULL,
+  `salario` DECIMAL(10, 2) NOT NULL,
+  `cargo` VARCHAR(20) NOT NULL,
+  `departamento` VARCHAR(45) NULL,
+  `qtdEquipesGerenc` INT NULL,
+  `ferramenta` VARCHAR(45) NULL,
+  `qtdRelatorios` INT NULL,
+  `linguagemP` VARCHAR(45) NULL,
+  `nivelSen` VARCHAR(20) NULL,
+  PRIMARY KEY (`cpf`)
+);
+
+CREATE TABLE IF NOT EXISTS `projeto` (
+  `id_projeto` INT NOT NULL AUTO_INCREMENT,
+  `nomeProjeto` VARCHAR(100) NOT NULL UNIQUE,
+  `status` VARCHAR(45) NULL,
+  `dataInicio` DATE NULL,
+  `prazoFinal` DATE NULL,
+  `gerente_responsavel_cpf` INT NULL,
+  PRIMARY KEY (`id_projeto`),
+  CONSTRAINT `fk_projeto_gerente`
+    FOREIGN KEY (`gerente_responsavel_cpf`)
+    REFERENCES `funcionario` (`cpf`)
+    ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS `projeto_equipe` (
+  `projeto_id` INT NOT NULL,
+  `funcionario_cpf` INT NOT NULL,
+  PRIMARY KEY (`projeto_id`, `funcionario_cpf`),
+  CONSTRAINT `fk_equipe_projeto`
+    FOREIGN KEY (`projeto_id`)
+    REFERENCES `projeto` (`id_projeto`)
+    ON DELETE CASCADE,
+  CONSTRAINT `fk_equipe_funcionario`
+    FOREIGN KEY (`funcionario_cpf`)
+    REFERENCES `funcionario` (`cpf`)
+    ON DELETE CASCADE
+);
+```
+3. Configuração do Projeto
+Abra o projeto no NetBeans.
+
+Navegue até o arquivo connection/ConexaoMySQL.java.
+
+Altere as variáveis USER e PASSWORD para corresponder às suas credenciais do MySQL:
+```
+// dentro de connection/ConexaoMySQL.java
+private static final String USER = "root";
+private static final String PASSWORD = "sua_senha_aqui"; // <-- MUDE AQUI
+```
+
+4. Executando a Aplicação
+Clique com o botão direito no projeto e selecione "Limpar e Construir" (Clean and Build).
+
+Encontre o arquivo View/FormPrincipal.java.
+
+Clique com o botão direito nele e selecione "Executar Arquivo" (Run File).
+
+O formulário principal será aberto.
