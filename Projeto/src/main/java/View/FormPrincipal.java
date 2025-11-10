@@ -175,7 +175,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_itMnCadGerActionPerformed
 
     private void itMnCadAnalistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itMnCadAnalistActionPerformed
-        //FormConsAnalista.geraConsAna().setVisible(true);
+        FormConsAnalista.geraConsAna().setVisible(true);
     }//GEN-LAST:event_itMnCadAnalistActionPerformed
 
     private void itMnCadProgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itMnCadProgActionPerformed
