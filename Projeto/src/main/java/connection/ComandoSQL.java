@@ -17,6 +17,41 @@ public class ComandoSQL {
      * Executa comandos que modificam dados no banco.
      * @param sql O comando SQL a ser executado.
      */
+    public boolean executarInsert(String sql) { 
+        Connection con = null;
+        Statement st = null;
+        boolean sucesso = false; 
+
+        try {
+            // Abre a conexão
+            con = ConexaoMySQL.getConexao();
+
+            // Cria o objeto Statement
+            st = con.createStatement();
+
+            // Executa o comando de atualização
+            st.executeUpdate(sql);
+
+            // Se chegou aqui, deu certo
+            sucesso = true; // <-- Marca como sucesso
+
+        } catch (SQLException e) {
+            // MENSAGEM DE ERRO GENÉRICA (inclui CPF duplicado e outros erros)
+            JOptionPane.showMessageDialog(
+                null,
+                "ERRO: Este funcionario ja esta cadastrado no sistema\n", // Mostra a mensagem do MySQL
+                "Erro de SQL",
+                JOptionPane.ERROR_MESSAGE
+            );
+            sucesso = false; // <-- Marca como falha
+        } finally {
+            // Garante que a conexão e o statement sejam fechados
+            ConexaoMySQL.fecharConexao(con, st);
+        }
+        
+        return sucesso; // <-- Retorna true ou false
+    }
+    
     public boolean executarUpdate(String sql) { 
         Connection con = null;
         Statement st = null;

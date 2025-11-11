@@ -44,7 +44,10 @@ public class ProgramadorCtrl {
                 + "salario = " + p.getSalario() + ", linguagemP = '" + p.getLinguagemP() + "', "
                 + "nivelSen = '" + p.getNivelSen() + "' "
                 + "WHERE cpf = " + p.getCpf() + " AND cargo = 'Programador'";
-        comando.executarUpdate(sql);
+        boolean sucesso = comando.executarUpdate(sql);
+        if(sucesso){
+            JOptionPane.showMessageDialog(null, "Programador atualizado com sucesso!");
+        }
     }
 
     public void exclui(int cpf) {

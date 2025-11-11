@@ -36,11 +36,17 @@ public class GerenteCtrl {
     }
 
     public void atualiza(Gerente g) {
-        String sql = "UPDATE funcionario SET nome = '" + g.getNome() + "', email = '" + g.getEmail() + "', "
-                + "salario = " + g.getSalario() + ", departamento = '" + g.getDepartamento() + "', "
-                + "', qtdEquipesGerenc = " + g.getQtdEquipesGerenc() + " "
+        String sql = "UPDATE funcionario SET "
+                + "nome = '" + g.getNome() + "', "
+                + "email = '" + g.getEmail() + "', "
+                + "salario = " + g.getSalario() + ", "
+                + "departamento = '" + g.getDepartamento() + "', "
+                + "qtdEquipesGerenc = " + g.getQtdEquipesGerenc() + " "
                 + "WHERE cpf = " + g.getCpf() + " AND cargo = 'Gerente'";
-        comando.executarUpdate(sql);
+        boolean sucesso = comando.executarUpdate(sql);
+        if(sucesso){
+            JOptionPane.showMessageDialog(null, "Gerente atualizado com sucesso!");
+        }
     }
 
     public void exclui(int cpf) {

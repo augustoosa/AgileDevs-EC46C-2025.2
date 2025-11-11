@@ -41,7 +41,10 @@ public class AnalistaDeDadosCtrl {
                 + "salario = " + a.getSalario() + ", ferramenta = '" + a.getFerramenta() + "', "
                 + "qtdRelatorios = " + a.getQtdRelatorios() + " "
                 + "WHERE cpf = " + a.getCpf() + " AND cargo = 'AnalistaDeDados'";
-        comando.executarUpdate(sql);
+        boolean sucesso = comando.executarUpdate(sql);
+        if(sucesso){
+            JOptionPane.showMessageDialog(null, "Analista atualizado com sucesso!");
+        }
     }
 
     public void exclui(int cpf) {

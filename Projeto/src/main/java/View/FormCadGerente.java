@@ -411,7 +411,7 @@ public class FormCadGerente extends javax.swing.JFrame {
             if (g != null) {
                 cxCpf.setText(String.valueOf(g.getCpf()));
                 cxNome.setText(g.getNome());
-                cxEmail.setText(g.getEmail()); // Assumindo que cxEmail existe
+                cxEmail.setText(g.getEmail());
                 cxSalario.setText(String.valueOf(g.getSalario()));
                 cxDepartamento.setText(g.getDepartamento());
                 cxQtdEquipes.setText(String.valueOf(g.getQtdEquipesGerenc()));
