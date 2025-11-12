@@ -56,7 +56,7 @@ public class FuncionarioCtrl {
 
                     if (f != null) {
                         // Preenche os dados comuns da classe mãe
-                        f.setCpf(rs.getInt("cpf"));
+                        f.setCpf(rs.getLong("cpf"));
                         f.setNome(rs.getString("nome"));
                         f.setEmail(rs.getString("email"));
                         f.setSalario(rs.getDouble("salario"));

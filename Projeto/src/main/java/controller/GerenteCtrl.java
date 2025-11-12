@@ -49,13 +49,13 @@ public class GerenteCtrl {
         }
     }
 
-    public void exclui(int cpf) {
+    public void exclui(long cpf) {
         String sql = "DELETE FROM funcionario WHERE cpf = " + cpf + " AND cargo = 'Gerente'";
         comando.executarUpdate(sql);
     }
 
     // MÉTODO NOVO - Busca um único gerente pelo CPF
-    public Gerente buscaPorCpf(int cpf) {
+    public Gerente buscaPorCpf(long cpf) {
         String sql = "SELECT * FROM funcionario WHERE cpf = " + cpf + " AND cargo = 'Gerente'";
         ResultSet rs = null;
         Gerente g = null;
@@ -64,7 +64,7 @@ public class GerenteCtrl {
             rs = comando.executarQuery(sql);
             if (rs != null && rs.next()) {
                 g = new Gerente();
-                g.setCpf(rs.getInt("cpf"));
+                g.setCpf(rs.getLong("cpf"));
                 g.setNome(rs.getString("nome"));
                 g.setEmail(rs.getString("email"));
                 g.setSalario(rs.getDouble("salario"));
@@ -102,7 +102,7 @@ public class GerenteCtrl {
             if (rs != null) {
                 while (rs.next()) {
                     Gerente g = new Gerente();
-                    g.setCpf(rs.getInt("cpf"));
+                    g.setCpf(rs.getLong("cpf"));
                     g.setNome(rs.getString("nome"));
                     g.setEmail(rs.getString("email"));
                     g.setSalario(rs.getDouble("salario"));
@@ -157,7 +157,7 @@ public class GerenteCtrl {
             if (rs != null) {
                 while (rs.next()) {
                     Gerente g = new Gerente();
-                    g.setCpf(rs.getInt("cpf"));
+                    g.setCpf(rs.getLong("cpf"));
                     g.setNome(rs.getString("nome"));
                     g.setEmail(rs.getString("email"));
                     g.setSalario(rs.getDouble("salario"));

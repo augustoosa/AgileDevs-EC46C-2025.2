@@ -341,7 +341,7 @@ public class FormCadProgramador extends javax.swing.JFrame {
     
     public void excProgCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            Long cpf = Long.parseLong(cxCpf.getText());
             
             // Pergunta ao usuário para confirmar a exclusão
             int resp = JOptionPane.showConfirmDialog(
@@ -371,7 +371,7 @@ public class FormCadProgramador extends javax.swing.JFrame {
     public void altProgCpf() {
         try {
             Programador p = new Programador();
-            p.setCpf(Integer.parseInt(cxCpf.getText()));
+            p.setCpf(Long.parseLong(cxCpf.getText()));
             p.setNome(cxNome.getText());
             p.setEmail(cxEmail.getText());
             p.setSalario(Double.parseDouble(cxSalario.getText()));
@@ -392,7 +392,7 @@ public class FormCadProgramador extends javax.swing.JFrame {
     
     public void consProgCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
 
             // Pede ao controller para buscar o programador pelo CPF
             Programador p = controller.buscaPorCpf(cpf);
@@ -421,7 +421,7 @@ public class FormCadProgramador extends javax.swing.JFrame {
         Programador programador = new Programador();
         try {
             // 1. Coleta os dados da tela
-            programador.setCpf(Integer.parseInt(cxCpf.getText()));
+            programador.setCpf(Long.parseLong(cxCpf.getText()));
             programador.setNome(cxNome.getText());
             programador.setEmail(cxEmail.getText());
             programador.setSalario(Double.parseDouble(cxSalario.getText()));
@@ -445,7 +445,7 @@ public class FormCadProgramador extends javax.swing.JFrame {
             // Erro de formato nos campos ANTES de ir para o banco
             JOptionPane.showMessageDialog(
                 null,
-                "CPF e Salário devem ser números válidos!",
+                "CPF e Salário devem ser números válidoss!",
                 "Erro de Formato",
                 JOptionPane.ERROR_MESSAGE
             );
@@ -473,7 +473,7 @@ public class FormCadProgramador extends javax.swing.JFrame {
     
     public void gerarDescricaoCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             Programador p = controller.buscaPorCpf(cpf); // Usa o novo método de busca
 
             if (p != null) {

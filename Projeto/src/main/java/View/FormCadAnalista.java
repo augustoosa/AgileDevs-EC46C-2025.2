@@ -368,7 +368,7 @@ public class FormCadAnalista extends javax.swing.JFrame {
 
     public void excAnaCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             int resp = JOptionPane.showConfirmDialog(
                 null, 
                 "Tem certeza que deseja excluir o analista com CPF " + cpf + "?", 
@@ -389,7 +389,7 @@ public class FormCadAnalista extends javax.swing.JFrame {
     public void altAnaCpf() {
         try {
             AnalistaDeDados a = new AnalistaDeDados();
-            a.setCpf(Integer.parseInt(cxCpf.getText()));
+            a.setCpf(Long.parseLong(cxCpf.getText()));
             a.setNome(cxNome.getText());
             a.setEmail(cxEmail.getText());
             a.setSalario(Double.parseDouble(cxSalario.getText()));
@@ -407,7 +407,7 @@ public class FormCadAnalista extends javax.swing.JFrame {
 
     public void consAnaCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             AnalistaDeDados a = controller.buscaPorCpf(cpf);
 
             if (a != null) {
@@ -432,7 +432,7 @@ public class FormCadAnalista extends javax.swing.JFrame {
         AnalistaDeDados analista = new AnalistaDeDados();
         try {
             // 1. Coleta os dados da tela
-            analista.setCpf(Integer.parseInt(cxCpf.getText()));
+            analista.setCpf(Long.parseLong(cxCpf.getText()));
             analista.setNome(cxNome.getText());
             analista.setEmail(cxEmail.getText()); // Certifique-se que cxEmail existe no seu form
             analista.setSalario(Double.parseDouble(cxSalario.getText()));
@@ -476,7 +476,7 @@ public class FormCadAnalista extends javax.swing.JFrame {
     
     public void calcBonusCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             AnalistaDeDados a = controller.buscaPorCpf(cpf);
 
             if (a != null) {
@@ -495,7 +495,7 @@ public class FormCadAnalista extends javax.swing.JFrame {
 
     public void gerarDescricaoCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             AnalistaDeDados a = controller.buscaPorCpf(cpf);
 
             if (a != null) {

@@ -364,7 +364,7 @@ public class FormCadGerente extends javax.swing.JFrame {
 
     public void excGerCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             int resp = JOptionPane.showConfirmDialog(
                 null, 
                 "Tem certeza que deseja excluir o gerente com CPF " + cpf + "?", 
@@ -385,7 +385,7 @@ public class FormCadGerente extends javax.swing.JFrame {
     public void altGerCpf() {
         try {
             Gerente g = new Gerente();
-            g.setCpf(Integer.parseInt(cxCpf.getText()));
+            g.setCpf(Long.parseLong(cxCpf.getText()));
             g.setNome(cxNome.getText());
             g.setEmail(cxEmail.getText()); // Assumindo que cxEmail existe
             g.setSalario(Double.parseDouble(cxSalario.getText()));
@@ -405,7 +405,7 @@ public class FormCadGerente extends javax.swing.JFrame {
 
     public void consGerCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             Gerente g = controller.buscaPorCpf(cpf);
 
             if (g != null) {
@@ -430,7 +430,7 @@ public class FormCadGerente extends javax.swing.JFrame {
         Gerente gerente = new Gerente();
         try {
             // 1. Coleta os dados da tela
-            gerente.setCpf(Integer.parseInt(cxCpf.getText()));
+            gerente.setCpf(Long.parseLong(cxCpf.getText()));
             gerente.setNome(cxNome.getText());
             gerente.setEmail(cxEmail.getText()); // Certifique-se que cxEmail existe no seu form
             gerente.setSalario(Double.parseDouble(cxSalario.getText()));
@@ -484,7 +484,7 @@ public class FormCadGerente extends javax.swing.JFrame {
     
     public void calcBonusCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             Gerente g = controller.buscaPorCpf(cpf);
 
             if (g != null) {
@@ -503,7 +503,7 @@ public class FormCadGerente extends javax.swing.JFrame {
 
     public void gerarDescricaoCpf() {
         try {
-            int cpf = Integer.parseInt(cxCpf.getText());
+            long cpf = Long.parseLong(cxCpf.getText());
             Gerente g = controller.buscaPorCpf(cpf);
 
             if (g != null) {

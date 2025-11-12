@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
-import Exceptions.NivelSenioridadeInvException; // Import da sua exceção
+import Exceptions.NivelSenioridadeInvException;
 
 public class ProgramadorCtrl {
 
@@ -39,7 +39,7 @@ public class ProgramadorCtrl {
     }
 
     public void atualiza(Programador p) {
-        // (Este método continua o mesmo)
+        
         String sql = "UPDATE funcionario SET nome = '" + p.getNome() + "', email = '" + p.getEmail() + "', "
                 + "salario = " + p.getSalario() + ", linguagemP = '" + p.getLinguagemP() + "', "
                 + "nivelSen = '" + p.getNivelSen() + "' "
@@ -50,14 +50,14 @@ public class ProgramadorCtrl {
         }
     }
 
-    public void exclui(int cpf) {
-        // (Este método continua o mesmo)
+    public void exclui(long cpf) {
+        
         String sql = "DELETE FROM funcionario WHERE cpf = " + cpf + " AND cargo = 'Programador'";
         comando.executarUpdate(sql);
     }
 
-    // MÉTODO NOVO - Busca um único programador pelo CPF
-    public Programador buscaPorCpf(int cpf) {
+    //Busca um único programador pelo CPF
+    public Programador buscaPorCpf(long cpf) {
         String sql = "SELECT * FROM funcionario WHERE cpf = " + cpf + " AND cargo = 'Programador'";
         ResultSet rs = null;
         Programador p = null;
@@ -66,7 +66,7 @@ public class ProgramadorCtrl {
             rs = comando.executarQuery(sql);
             if (rs != null && rs.next()) { // Verifica se encontrou algum resultado
                 p = new Programador();
-                p.setCpf(rs.getInt("cpf"));
+                p.setCpf(rs.getLong("cpf"));
                 p.setNome(rs.getString("nome"));
                 p.setEmail(rs.getString("email"));
                 p.setSalario(rs.getDouble("salario"));
@@ -104,7 +104,7 @@ public class ProgramadorCtrl {
             if (rs != null) {
                 while (rs.next()) {
                     Programador p = new Programador();
-                    p.setCpf(rs.getInt("cpf"));
+                    p.setCpf(rs.getLong("cpf"));
                     p.setNome(rs.getString("nome"));
                     p.setEmail(rs.getString("email"));
                     p.setSalario(rs.getDouble("salario"));
@@ -163,7 +163,7 @@ public class ProgramadorCtrl {
                 while (rs.next()) {
                     // Lógica de "preencherObjeto" está aqui
                     Programador p = new Programador();
-                    p.setCpf(rs.getInt("cpf"));
+                    p.setCpf(rs.getLong("cpf"));
                     p.setNome(rs.getString("nome"));
                     p.setEmail(rs.getString("email"));
                     p.setSalario(rs.getDouble("salario"));

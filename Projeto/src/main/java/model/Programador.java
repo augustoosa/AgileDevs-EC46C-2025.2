@@ -16,7 +16,7 @@ public class Programador extends Funcionario{
 
     //Construtor Sobrecarregado
     // Sobregarga
-    public Programador(String nome, int cpf, double salario,String email, String linguagemP, String nivelSen) {
+    public Programador(String nome, long cpf, double salario,String email, String linguagemP, String nivelSen) {
         super(nome, cpf, salario,email);
         this.linguagemP = linguagemP;
         this.nivelSen = nivelSen;

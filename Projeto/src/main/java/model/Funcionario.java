@@ -8,7 +8,7 @@ public abstract class Funcionario {
 
     // Atributos
     private String nome;
-    private int cpf;
+    private long cpf;
     private double salario;
     private String email; 
 
@@ -21,7 +21,7 @@ public abstract class Funcionario {
     }
 
     // Construtor com Sobrecarga - ATUALIZADO
-    public Funcionario(String nome, int cpf, double salario,String email) {
+    public Funcionario(String nome, long cpf, double salario,String email) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
@@ -39,10 +39,10 @@ public abstract class Funcionario {
         this.nome = nome;
     }
 
-    public int getCpf() {
+    public long getCpf() {
         return cpf;
     }
-    public void setCpf(int cpf) {
+    public void setCpf(long cpf) {
         this.cpf = cpf;
     }
     

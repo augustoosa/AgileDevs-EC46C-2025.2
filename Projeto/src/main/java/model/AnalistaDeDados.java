@@ -15,7 +15,7 @@ public class AnalistaDeDados extends Funcionario implements Calc{
     }
 
     // Sobrecarga
-    public AnalistaDeDados(String nome, int cpf,String email, double salario,String ferramenta, int qtdRelatorios) {
+    public AnalistaDeDados(String nome, long cpf,String email, double salario,String ferramenta, int qtdRelatorios) {
         super(nome, cpf, salario,email);
         this.ferramenta = ferramenta;
         this.qtdRelatorios = qtdRelatorios;

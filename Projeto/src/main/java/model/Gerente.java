@@ -18,7 +18,7 @@ public class Gerente extends Funcionario implements Calc{
 
     // Construtor com Sobrecarregado
     //Sobrecarga
-    public Gerente(String nome, int cpf, double salario,String email,String departamento, String tipoGerencia, int qtdEquipesGerenc) {
+    public Gerente(String nome, long cpf, double salario,String email,String departamento, String tipoGerencia, int qtdEquipesGerenc) {
         super(nome, cpf, salario,email);
         this.departamento = departamento;
         this.qtdEquipesGerenc = qtdEquipesGerenc;

@@ -75,7 +75,7 @@ public class ProjetoCtrl {
                 p.setPrazoFinal(rs.getDate("prazoFinal"));
                 
                 // Busca o objeto Gerente responsável
-                int gerenteCpf = rs.getInt("gerente_responsavel_cpf");
+                long gerenteCpf = rs.getLong("gerente_responsavel_cpf");
                 if (!rs.wasNull()) {
                     Gerente g = new GerenteCtrl().buscaPorCpf(gerenteCpf);
                     p.setGerenteResponsavel(g);
@@ -105,7 +105,7 @@ public class ProjetoCtrl {
                     p.setPrazoFinal(rs.getDate("prazoFinal"));
                     
                     // Pega o CPF do gerente
-                    int gerenteCpf = rs.getInt("gerente_responsavel_cpf");
+                    long gerenteCpf = rs.getLong("gerente_responsavel_cpf");
                     if (!rs.wasNull()) {
                         // Para otimizar, podemos apenas criar um gerente "fake" com o CPF
                         // ou buscar o gerente completo. Vamos buscar o completo.
@@ -202,7 +202,7 @@ public class ProjetoCtrl {
             if (p.getGerenteResponsavel() != null) {
                 pstmt.setLong(5, p.getGerenteResponsavel().getCpf());
             } else {
-                pstmt.setNull(5, java.sql.Types.INTEGER);
+                pstmt.setNull(5, java.sql.Types.BIGINT);
             }
 
             // Executa a inserção
@@ -262,7 +262,7 @@ public class ProjetoCtrl {
                     p.setStatus(rs.getString("status"));
                     p.setDataInicio(rs.getDate("dataInicio"));
                     p.setPrazoFinal(rs.getDate("prazoFinal"));
-                    int cpf = rs.getInt("gerente_responsavel_cpf");
+                    long cpf = rs.getInt("gerente_responsavel_cpf");
                     if (!rs.wasNull()) {
                          p.setGerenteResponsavel(gerenteCtrl.buscaPorCpf(cpf));
                     }
@@ -302,7 +302,7 @@ public class ProjetoCtrl {
                     if(cargo.equals("Programador")) {
                         Programador p = new Programador();
                         // Lógica de "preencherProgramador" está aqui
-                        p.setCpf(rs.getInt("cpf"));
+                        p.setCpf(rs.getLong("cpf"));
                         p.setNome(rs.getString("nome"));
                         p.setEmail(rs.getString("email"));
                         p.setSalario(rs.getDouble("salario"));
@@ -312,7 +312,7 @@ public class ProjetoCtrl {
                     } else if (cargo.equals("AnalistaDeDados")) {
                         AnalistaDeDados a = new AnalistaDeDados();
                         // Lógica de "preencherAnalista" está aqui
-                        a.setCpf(rs.getInt("cpf"));
+                        a.setCpf(rs.getLong("cpf"));
                         a.setNome(rs.getString("nome"));
                         a.setEmail(rs.getString("email"));
                         a.setSalario(rs.getDouble("salario"));

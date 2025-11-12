@@ -47,13 +47,13 @@ public class AnalistaDeDadosCtrl {
         }
     }
 
-    public void exclui(int cpf) {
+    public void exclui(long cpf) {
         String sql = "DELETE FROM funcionario WHERE cpf = " + cpf + " AND cargo = 'AnalistaDeDados'";
         comando.executarUpdate(sql);
     }
 
     // MÉTODO NOVO - Busca um único analista pelo CPF
-    public AnalistaDeDados buscaPorCpf(int cpf) {
+    public AnalistaDeDados buscaPorCpf(long cpf) {
         String sql = "SELECT * FROM funcionario WHERE cpf = " + cpf + " AND cargo = 'AnalistaDeDados'";
         ResultSet rs = null;
         AnalistaDeDados a = null;
@@ -62,7 +62,7 @@ public class AnalistaDeDadosCtrl {
             rs = comando.executarQuery(sql);
             if (rs != null && rs.next()) {
                 a = new AnalistaDeDados();
-                a.setCpf(rs.getInt("cpf"));
+                a.setCpf(rs.getLong("cpf"));
                 a.setNome(rs.getString("nome"));
                 a.setEmail(rs.getString("email"));
                 a.setSalario(rs.getDouble("salario"));
@@ -96,7 +96,7 @@ public class AnalistaDeDadosCtrl {
             if (rs != null) {
                 while (rs.next()) {
                     AnalistaDeDados a = new AnalistaDeDados();
-                    a.setCpf(rs.getInt("cpf"));
+                    a.setCpf(rs.getLong("cpf"));
                     a.setNome(rs.getString("nome"));
                     a.setEmail(rs.getString("email"));
                     a.setSalario(rs.getDouble("salario"));
@@ -155,7 +155,7 @@ public class AnalistaDeDadosCtrl {
             if (rs != null) {
                 while (rs.next()) {
                     AnalistaDeDados a = new AnalistaDeDados();
-                    a.setCpf(rs.getInt("cpf"));
+                    a.setCpf(rs.getLong("cpf"));
                     a.setNome(rs.getString("nome"));
                     a.setEmail(rs.getString("email"));
                     a.setSalario(rs.getDouble("salario"));
