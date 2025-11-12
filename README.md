@@ -62,46 +62,76 @@ Siga estes passos para configurar e executar o projeto em seu ambiente local.
 2.  Execute o script SQL abaixo para criar o banco `banco_POO2` e todas as tabelas:
 
 ```sql
+-- Nome do Banco de Dados conforme solicitado
 CREATE DATABASE IF NOT EXISTS `banco_POO2` DEFAULT CHARACTER SET utf8mb4;
+
+-- Seleciona o banco de dados para uso
 USE `banco_POO2`;
 
+-- -----------------------------------------------------
+-- Tabela `funcionario`
+-- Chave primária (cpf) definida como BIGINT para aceitar 11 dígitos.
+-- O campo 'cargo' define o tipo de funcionário.
+-- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `funcionario` (
-  `cpf` INT NOT NULL,
+  `cpf` BIGINT NOT NULL,          -- CORRIGIDO: BIGINT para aceitar 11 dígitos
   `nome` VARCHAR(100) NOT NULL,
   `email` VARCHAR(100) NULL,
   `salario` DECIMAL(10, 2) NOT NULL,
-  `cargo` VARCHAR(20) NOT NULL,
+  `cargo` VARCHAR(20) NOT NULL,    -- Ex: 'Gerente', 'Programador', 'AnalistaDeDados'
+  
+  -- Campos específicos de Gerente (tipoGerencia foi removido)
   `departamento` VARCHAR(45) NULL,
   `qtdEquipesGerenc` INT NULL,
+
+  -- Campos específicos de Analista de Dados
   `ferramenta` VARCHAR(45) NULL,
   `qtdRelatorios` INT NULL,
+
+  -- Campos específicos de Programador
   `linguagemP` VARCHAR(45) NULL,
   `nivelSen` VARCHAR(20) NULL,
+
   PRIMARY KEY (`cpf`)
 );
 
+
+-- -----------------------------------------------------
+-- Tabela `projeto`
+-- O gerente responsável é vinculado pelo CPF.
+-- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `projeto` (
   `id_projeto` INT NOT NULL AUTO_INCREMENT,
   `nomeProjeto` VARCHAR(100) NOT NULL UNIQUE,
   `status` VARCHAR(45) NULL,
   `dataInicio` DATE NULL,
   `prazoFinal` DATE NULL,
-  `gerente_responsavel_cpf` INT NULL,
+  `gerente_responsavel_cpf` BIGINT NULL, -- CORRIGIDO: BIGINT para compatibilidade
+  
   PRIMARY KEY (`id_projeto`),
+  
   CONSTRAINT `fk_projeto_gerente`
     FOREIGN KEY (`gerente_responsavel_cpf`)
     REFERENCES `funcionario` (`cpf`)
     ON DELETE SET NULL
 );
 
+
+-- -----------------------------------------------------
+-- Tabela `projeto_equipe` (Tabela de Junção)
+-- Gerencia a relação Muitos-para-Muitos.
+-- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `projeto_equipe` (
   `projeto_id` INT NOT NULL,
-  `funcionario_cpf` INT NOT NULL,
+  `funcionario_cpf` BIGINT NOT NULL, -- CORRIGIDO: BIGINT para compatibilidade
+  
   PRIMARY KEY (`projeto_id`, `funcionario_cpf`),
+  
   CONSTRAINT `fk_equipe_projeto`
     FOREIGN KEY (`projeto_id`)
     REFERENCES `projeto` (`id_projeto`)
     ON DELETE CASCADE,
+
   CONSTRAINT `fk_equipe_funcionario`
     FOREIGN KEY (`funcionario_cpf`)
     REFERENCES `funcionario` (`cpf`)
