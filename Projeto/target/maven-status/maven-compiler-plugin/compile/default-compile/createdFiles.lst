@@ -31,6 +31,7 @@ View\FormCadProgramador$6.class
 View\FormConsProjeto.class
 View\FormCadProgramador.class
 View\FormConsAnalista$2.class
+View\FormConsProgramador$3.class
 View\FormCadGerente$6.class
 View\FormConsProjeto$4.class
 View\FormCadAnalista$2.class
@@ -60,6 +61,7 @@ View\FormCadProjeto$6.class
 View\FormPrincipal$4.class
 View\FormCadGerente.class
 View\FormCadAnalista$9.class
+View\FormCadProjeto$13.class
 View\FormPrincipal$7.class
 View\FormCadGerente$3.class
 View\FormCadProjeto$3.class

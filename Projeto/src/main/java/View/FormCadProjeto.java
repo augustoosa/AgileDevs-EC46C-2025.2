@@ -58,7 +58,7 @@ public class FormCadProjeto extends javax.swing.JFrame {
         this.equipeStaged = new ArrayList<>();
 
         configurarModelos();
-        carregarComboBoxes();
+        
         
         // Vamos desabilitar os botões de adicionar equipe até que um projeto seja criado/selecionado
         // (Isso será para a próxima etapa, por enquanto vamos focar na inserção)
@@ -112,6 +112,9 @@ public class FormCadProjeto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
@@ -196,6 +199,12 @@ public class FormCadProjeto extends javax.swing.JFrame {
 
         jLabel2.setText("PROGRAMADORES");
 
+        cmbProgramadores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbProgramadoresActionPerformed(evt);
+            }
+        });
+
         jLabel3.setText("ANALISTAS");
 
         btAddProgramador.setText("Adicionar Programador");
@@ -240,7 +249,7 @@ public class FormCadProjeto extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btExcluir))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 18, Short.MAX_VALUE))
+                .addGap(0, 27, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(cxIdProjeto, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -493,6 +502,15 @@ public class FormCadProjeto extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "O analista '" + aSelecionado.getNome() + "' não estava na equipe atual.", "Aviso", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btExcluirAnalistaActionPerformed
+
+    private void cmbProgramadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbProgramadoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbProgramadoresActionPerformed
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        carregarComboBoxes();
+        
+    }//GEN-LAST:event_formWindowActivated
     
     private void criarNovoProjeto() {
         // ---- ETAPA 1: VALIDAÇÃO DAS REGRAS ----

@@ -11,7 +11,7 @@
         <maven.compiler.target>18</maven.compiler.target>
         <exec.mainClass>View.FormPrincipal</exec.mainClass>
     </properties>
-    <name>ProjetoFinalDevAgil</name>
+    <name>ProjetoFinal</name>
     <dependencies>
         <dependency>
             <groupId>com.mysql</groupId>

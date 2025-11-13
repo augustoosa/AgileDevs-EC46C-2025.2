@@ -64,7 +64,7 @@
       <Color blue="ff" green="ff" red="99" type="rgb"/>
     </Property>
     <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
-      <Point value="[500, 100]"/>
+      <Point value="[200, 100]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -87,34 +87,31 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Component id="btProg" min="-2" pref="241" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btProj" max="32767" attributes="0"/>
-                          <Component id="btAna" min="-2" pref="227" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btGer" min="-2" pref="231" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
-                      <Component id="txtTituloPrincipal" min="-2" max="-2" attributes="0"/>
-                  </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
+              <Component id="btProg" min="-2" pref="241" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="btProj" max="32767" attributes="0"/>
+                  <Component id="btAna" min="-2" pref="227" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="65" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btGer" min="-2" pref="231" max="-2" attributes="0"/>
+              <EmptySpace pref="164" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="txtTituloPrincipal" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="265" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Component id="txtTituloPrincipal" min="-2" pref="92" max="-2" attributes="0"/>
-              <EmptySpace pref="55" max="32767" attributes="0"/>
+              <EmptySpace pref="112" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btProg" alignment="3" min="-2" pref="79" max="-2" attributes="0"/>
                   <Component id="btAna" alignment="3" min="-2" pref="79" max="-2" attributes="0"/>
@@ -122,7 +119,7 @@
               </Group>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Component id="btProj" min="-2" pref="79" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
