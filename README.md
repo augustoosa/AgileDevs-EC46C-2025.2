@@ -43,8 +43,14 @@ O projeto tem como objetivo atuar como sistema interno (CRUD) utilizado por uma 
 ---
 
 ## 🗂️ Documentos no repositório (Sumário)
-- Requisitos Funcionais
-- Requisitos Não Funcionais
+- [Requisitos Funcionais (RF.md)](./Requisitos%20de%20Usuario/RF.md)
+- [Requisitos Não Funcionais (RNF.md)](./Requisitos%20de%20Usuario/RNF.md)
+- [Histórias de Usuário (HistoriasUsuario.md)](./Requisitos%20de%20Usuario/HistoriasUsuario.md)
+- [Inspeção dos Requisitos (PDF)](./Requisitos%20de%20Usuario/Inspe%C3%A7%C3%A3o%20dos%20Requisitos_Defeitos%20Encontrados.pdf)
+- [Prompt das Histórias de Usuário (PDF)](./Requisitos%20de%20Usuario/PromptHistorias-Usuarios.pdf)
+- [Diagramas de Sistema (.asta)](./Requisitos%20de%20Sistema/Projeto%20AgileDevs%20Diagramas.asta)
+- [Protótipo de Alta Fidelidade (links.md)](./Prototipacao/links.md)
+- [Estratégia de Branching (branch.md)](./branch.md)
 
 ## 🚀 Como Executar:
 
